@@ -21,7 +21,7 @@ const Contact = () => {
   const handleFrom = async (e) => {
     e.preventDefault();
     await axios
-      .post("http://localhost:5001/users", user)
+      .post("https://warm-taiga-19161.herokuapp.com/users", user)
       .then((res) => setMsg(res.data.respMesg));
   };
   return (
@@ -68,7 +68,10 @@ const Contact = () => {
           <Col sm={12} md={6}>
             <h2>Estimate your Project?</h2>
 
-            <p class="mb-3 mt-2" style={{ color: "green", marginLeft: "57px" }}>
+            <p
+              className="mb-3 mt-2"
+              style={{ color: "green", marginLeft: "57px" }}
+            >
               <b>{msg}</b>
             </p>
             <Fade bottom>

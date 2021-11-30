@@ -2,20 +2,24 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./Pages/Home/Home";
 import Details from "./Pages/Home/Portfolio/Details/Details";
+import Navigation from "./Pages/Shared/Navigation";
+import Footer from "./Pages/Footer/Footer";
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <Navigation />
         <Switch>
           <Route exact path="/">
             <Home />
           </Route>
 
-          {/* <Route exact path="/projects">
+          <Route exact path="/projects/:id">
             <Details />
-          </Route> */}
+          </Route>
         </Switch>
+        <Footer />
       </Router>
     </div>
   );

@@ -10,7 +10,7 @@ const Projects = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/projects")
+    fetch("https://warm-taiga-19161.herokuapp.com/projects")
       .then((res) => res.json())
       .then((data) => setProjects(data));
   }, []);
@@ -28,7 +28,7 @@ const Projects = () => {
         {
           // eslint-disable-next-line array-callback-return
           projects.map((project) => (
-            <Col sm={12} md={4} className="g-3">
+            <Col sm={12} md={4} className="g-3" key={project._id}>
               <Fade bottom>
                 <Card className="card">
                   <Card.Img
@@ -41,13 +41,13 @@ const Projects = () => {
                       <h4>{project.name}</h4>
 
                       <div className="d-flex   mt-5">
-                        {/* <Link
+                        <Link
                           to={`/projects/${project._id}`}
                           className="btn bg-primary me-5 text-white px-4 "
                         >
                           {" "}
                           More Details
-                        </Link> */}
+                        </Link>
                         <a href={project.liveLink}>
                           {" "}
                           <button className="btn bg-primary text-white px-4">
