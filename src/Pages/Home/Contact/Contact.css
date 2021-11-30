@@ -1,0 +1,19 @@
+.contact {
+  background: #f5df4e;
+  font-family: "Roboto Condensed", sans-serif;
+  padding: 20px;
+}
+.contact-text {
+  line-height: 40px;
+  margin-bottom: 30px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.icon {
+  font-size: 30px;
+  color: black;
+  transition: all 0.5s;
+}
+.icon:hover {
+  color: rgb(22, 25, 231);
+  transform: scale(0.5px);
+}

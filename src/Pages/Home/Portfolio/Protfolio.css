@@ -1,2 +1,33 @@
- 
- 
+.card {
+  position: relative;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+  border: 0;
+
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0, 0.7);
+}
+.card .img-box {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.card .content {
+  margin-left: -10000px;
+  padding: 10px;
+
+  transition: all 0.3s ease-in-out;
+  background: transparent;
+}
+.card:hover .img-box {
+  opacity: 0.5;
+  transform: scale(1.5);
+  overflow-y: hidden;
+  height: 135px;
+}
+.card:hover .content {
+  margin-left: -12px;
+
+  position: absolute;
+  top: 0;
+}

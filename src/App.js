@@ -1,14 +1,21 @@
- 
- 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import {BrowserRouter as Router} from'react-router-dom'
-import Home from './Pages/Home/Home';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Home from "./Pages/Home/Home";
+import Details from "./Pages/Home/Portfolio/Details/Details";
 
 function App() {
   return (
     <div className="App">
       <Router>
-       <Home/>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+
+          {/* <Route exact path="/projects">
+            <Details />
+          </Route> */}
+        </Switch>
       </Router>
     </div>
   );
