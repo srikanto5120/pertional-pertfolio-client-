@@ -61,30 +61,26 @@ const Skill = () => {
           </Col>
           <Col sm={12} md={6} className="resume-border">
             <Fade bottom>
-              <h5 className="fw-bold">
-                Bachelor's degree Political Science (2nd Years )
-              </h5>
-              <h6>National University/2018-2019</h6>
-              <h6>Gpa:3.29(1st Year)</h6>
+              <h5 className="fw-bold">Learning JavaScript Programing</h5>
+              <h6>Organization at Programing Hero(July 01,2021)</h6>
+
               <p className="mt-3">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the dummy text.
               </p>
               <hr />
+              <h5 className="fw-bold">Learning MERN Stack Web Developer</h5>
+              <h6>Organization at Programing Hero(July 01,2021)</h6>
 
-              <h5 className="fw-bold">Higher Secondary School Certificate</h5>
-              <h6>Pirganj Govt Collage/2017-2018</h6>
-              <h6>Gpa:4.00(1st Year)</h6>
               <p className="mt-3">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the dummy text.
               </p>
               <hr />
+              <h5 className="fw-bold">Learning FuLL Stack Web Developer</h5>
+              <h6>Organization at Programing Hero(July 01,2021)</h6>
 
-              <h5 className="fw-bold">Secondary School Certificate</h5>
-              <h6>Nakmorad Allimuddin Govt School/2009-2015</h6>
-              <h6>Gpa:5.00</h6>
-              <p className="mt-3 ">
+              <p className="mt-3">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the dummy text.
               </p>

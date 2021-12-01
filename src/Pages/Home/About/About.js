@@ -5,7 +5,11 @@ import "./About.css";
 
 const About = () => {
   return (
-    <div className="mt-5" style={{ fontFamily: "'Poppins', sans-serif " }}>
+    <div
+      id="about"
+      className="mt-5"
+      style={{ fontFamily: "'Poppins', sans-serif " }}
+    >
       <Container>
         <Fade bottom>
           <h5 className="text-center bg-color">About me</h5>

@@ -17,3 +17,6 @@
   color: rgb(22, 25, 231);
   transform: scale(0.5px);
 }
+.border-input {
+  border: 0px;
+}

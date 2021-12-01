@@ -16,11 +16,15 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="container" style={{ fontFamily: "'Poppins', sans-serif " }}>
+    <div
+      id="projects"
+      className="container"
+      style={{ fontFamily: "'Poppins', sans-serif " }}
+    >
       <Row>
         <Bounce left cascade>
           <div className="text-center my-5">
-            <h4 className=" bg-color">Portfolio</h4>
+            <h4 className=" bg-color">Projects</h4>
             <h1>Some of my most recent projects</h1>
           </div>
         </Bounce>
